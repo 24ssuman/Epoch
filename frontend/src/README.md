@@ -6,7 +6,7 @@ types.ts: shared frontend result/settings shapes. style.css: responsive visual d
 
 `settings.sanskritNames` (off by default) switches labels to Devanagari via `starLabel()` in types.ts (sky, atlas, search, object card, size comparison); objects without a Sanskrit name keep English, and named stars are labelled down to magnitude 6.5 instead of 2.6. The object card shows Devanagari · IAST, alternatives and English. Rendering is photographic only (the human-eye mode was removed on request 2026-10-21).
 
-Sky.tsx renders on demand (dirty flag set by camera changes, rebuilds, resize, texture/trail/constellation loads); book stars carry a `forced` attribute so the magnitude threshold does not hide them. App requests `view`/`horizon_only` matching the current view.
+Sky.tsx renders on demand (dirty flag set by camera changes, rebuilds, resize, texture/trail/constellation loads); text-attested stars carry a `forced` attribute so the magnitude threshold does not hide them. App requests `view`/`horizon_only` matching the current view.
 
 `settings.sunlight=false` sets daylight to zero and removes solar scattering from the sky shader (the Sun disk stays). It is a labelled, nonphysical visual aid. Body labels use `starLabel` too, so planets show Devanagari in Sanskrit mode.
 

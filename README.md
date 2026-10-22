@@ -79,4 +79,4 @@ Results are calculated from JPL ephemerides (DE440/DE441), the Hipparcos/HYG sta
 - [data/README.md](data/README.md): data sources and licenses
 - [tests/README.md](tests/README.md): what the tests check
 
-The `books/` folder is local only and is not included in this repository. It was used only as a source for Sanskrit star names.
+Sanskrit-name sources and their limits are documented in the [frontend guide](frontend/README.md#sanskrit-name-sources), with online links to the texts containing the names.
