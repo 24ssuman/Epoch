@@ -1,15 +1,15 @@
 # Offline scientific data
 
-`manifest.json` records installed-source URLs, local SHA-256 checksums, byte sizes, licenses/attribution and installation times. Full raw downloads are retained; partial optional downloads live beside their targets or under tmp/downloads.
+`manifest.json` records installed-source URLs, local SHA-256 checksums, byte sizes, licenses/attribution and installation times. Complete kernel files are retained. Their temporary ranged-download shards under `tmp/downloads/` may be removed after assembly and checksum verification.
 
 - kernels/: JPL DE440/DE441, GM constants and 16 asteroid J2000 states/source responses.
-- catalogs/: HYG/Hipparcos, measured JMDC diameters, bright-star galpy trajectories and retained checkpoints; optional Gaia UWS job/partial download.
+- catalogs/: HYG/Hipparcos, measured JMDC diameters, bright-star galpy trajectories and resumable checkpoints scoped to 15,000 BCE–5,000 CE; optional Gaia UWS job/partial download.
 - comets/: individually bounded cached JPL apparitions and original responses.
 - jobs/: numerical reconstruction checkpoints, accepted trajectory packs, validation reports, worker status and pause control.
 - assets/: local illustrative Earth/Moon images.
 - references/: original Horizons responses and parsed offline reference cases.
 
-All runtime data is local. Source links are attribution references, not background downloads. The installation plus retained generated/cache files is guarded against exceeding 10 decimal GB. No automatic deletion/eviction is performed.
+DE441 itself spans roughly 13,200 BCE–17,191 CE; it remains installed because its in-range portions supply planetary ephemerides, while API dates stay limited to 15,000 BCE–5,000 CE. All runtime data is local. Source links are attribution references, not background downloads. The installation plus retained generated/cache files is guarded against exceeding 10 decimal GB. No automatic deletion/eviction is performed.
 
 - catalogs/sanskrit_star_names.json: 32 Sanskrit star names from books/mahabharat_histroy.pdf (Oak 2011; Table 3 on PDF p.215 plus names in the text), each matched to a catalog star ID with book spelling, IAST, Devanagari, deity, the book's modern star, aliases, source pages and caveats. Names only. Built and checked against stars.json by scripts/install_sanskrit_names.py. Limitations are listed inside the file.
   The file also has `mentioned` (13 stars the book names only in English) and `display_policy`: every listed star lies within the common 5.76 magnitude limit (catalog.STAR_LIMIT).

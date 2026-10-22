@@ -246,7 +246,7 @@ The v3 lunar offset follows a·t² with a = 13.9″/cy², a mean-motion accelera
 
 ### E2. Current model (v5): DE441 seed, local integrator clock, calibrated lunar correction
 
-The past run now starts from NASA's DE441 states at its first epoch (JD −3,100,014.5, 13,201 BCE) and integrates only 13,201 → 20,000 BCE (6,800 years; the supported range was narrowed to 15,000 BCE on 2026-10-22, so 1,800 years are used) instead of 22,000 years from J2000. The 16 asteroids, which JPL does not publish that early, come from a reduced integration (scripts/deep_seed.py asteroids).
+The past run starts from NASA's DE441 states at its first epoch (JD −3,100,014.5, 13,201 BCE). The historical source comparison considered integrating to 20,000 BCE; the active 15,000 BCE lower bound uses 1,800 years of reduced-model extension. The 16 asteroids, which JPL does not publish that early, come from a reduced integration (scripts/deep_seed.py asteroids).
 The missing lunar tide is restored by shifting the Moon's osculating geocentric mean anomaly by −(c1·τ + c2·τ² + c3·τ³), τ in centuries from the seed, with c1 = -205.927″/cy (measured forward from the seed against DE441 over 5 centuries; on the hold-out a forward fit gave −83.13 vs −83.42″/cy backward), c2 = 13.6848″/cy², c3 = -0.00347″/cy³ (implied tidal acceleration -27.37″/cy²; DE430/DE441 use about −25.8). A mean-anomaly shift, unlike a rigid rotation, also moves the Moon correctly along its eccentric orbit.
 
 | Test | n | uncorrected rms | corrected rms | corrected max |

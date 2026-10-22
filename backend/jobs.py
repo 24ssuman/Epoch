@@ -312,9 +312,12 @@ def deep_state(jd,body,version=VERSION):
     def evaluate(g,target):
         edges=g[f'edges_{target}'];indices=np.where((np.minimum(edges[:-1],edges[1:])<=jd)&(np.maximum(edges[:-1],edges[1:])>=jd))[0]
         if not len(indices):return None
-        k=int(indices[0]);left,right=edges[k:k+2];x=2*(jd-left)/(right-left)-1;c=g[f'coeff_{target}'][k] if f'coeff_{target}' in g else np.concatenate([g[f'head_{target}'][k],g[f'tail_{target}'][k].astype('float64')],axis=0)
+        k=int(indices[0]);left,right=edges[k:k+2];x=2*(jd-left)/(right-left)-1;dxscale=1.
+        if f'xaffine_{target}' in g:
+            affine=g[f'xaffine_{target}'][k];x=x*affine[0]+affine[1];dxscale=affine[0]
+        c=g[f'coeff_{target}'][k] if f'coeff_{target}' in g else np.concatenate([g[f'head_{target}'][k],g[f'tail_{target}'][k].astype('float64')],axis=0)
         pos=np.polynomial.chebyshev.chebval(x,c)*AU
-        vel=np.polynomial.chebyshev.chebval(x,np.polynomial.chebyshev.chebder(c))*2/(right-left)*AU/86400
+        vel=np.polynomial.chebyshev.chebval(x,np.polynomial.chebyshev.chebder(c))*2/(right-left)*dxscale*AU/86400
         return pos,vel
     for interval,path in _intervals(index_stamp(),version):
         if not interval[0]<=jd<=interval[1]:continue

@@ -4,7 +4,7 @@ Online-only, explicitly invoked acquisition: setup_data.py (kernels/HYG or optio
 
 Offline: build_stellar_pack.py prepares bright-star Galactic trajectories; reconstruct.py runs a checkpointed reduced-model planetary worker. The website launches reconstruction as a standalone process so it can survive server restarts. These scripts preserve inputs/checkpoints and append reasoning/results to the root LOG.md.
 
-install_sanskrit_names.py (offline) writes data/catalogs/sanskrit_star_names.json and reports whether each book-named star is present in the star catalog. Edit its table, not the JSON, to change a mapping. build_stellar_pack.py now targets the 20,000 BCE–5,000 CE interval for future rebuilds; the existing pack (larger interval) is retained and not rebuilt.
+install_sanskrit_names.py (offline) writes data/catalogs/sanskrit_star_names.json and reports whether each book-named star is present in the star catalog. Edit its table, not the JSON, to change a mapping. build_stellar_pack.py targets the active 15,000 BCE–5,000 CE interval, including the last day of 5,000 CE.
 
 Terminal run of the whole interval (resumes from the retained checkpoint; launching clears a website pause): `nohup caffeinate -i .venv/bin/python scripts/reconstruct.py >> tmp/reconstruction.log 2>&1 &`. After the past run completes it starts the 2000 → 5,000 CE run automatically unless `--no-future` is given. Run one worker at a time; pause from the website or by setting `pause_requested` true in data/jobs/control.json.
 

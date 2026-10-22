@@ -7,7 +7,7 @@ os.environ.setdefault('OMP_NUM_THREADS','2')
 import json,time,hashlib,argparse
 import numpy as np
 from backend.catalog import CATALOG
-from backend.astrotime import MIN_YEAR,MAX_YEAR
+from backend.astrotime import MIN_YEAR,MAX_YEAR,calendar_jd,Epoch
 from scripts.setup_data import log,record
 
 def build(limit_mag=6.5):
@@ -19,18 +19,25 @@ def build(limit_mag=6.5):
     # Propagate each catalog reference epoch to J2000 before initializing Galactic trajectories.
     _,_,dist=CATALOG.propagate(2000.)
     supported=np.where(np.isfinite(CATALOG.distance)&np.array([r['rv_known'] and r['pmra'] is not None and r['pmdec'] is not None for r in rows]))[0]
+    # Pack endpoints match the supported interval's first and last instants, including MAX_YEAR's final day.
+    start_year=Epoch(calendar_jd(MIN_YEAR)).year
+    end_year=Epoch(calendar_jd(MAX_YEAR,12,31)).year
     # Retain stars that are or become within a magnitude-12 render limit in the requested interval.
     possible=CATALOG.mags.copy()
-    for yr in np.linspace(MIN_YEAR,MAX_YEAR,25):possible=np.minimum(possible,CATALOG.propagate(yr)[1])
+    for yr in np.linspace(start_year,end_year,25):possible=np.minimum(possible,CATALOG.propagate(yr)[1])
     indices=supported[possible[supported]<=limit_mag]
-    years=np.unique(np.concatenate([[float(MIN_YEAR)],np.arange(np.ceil(MIN_YEAR/1000.)*1000.,MAX_YEAR+1.,1000.),[2000.]]))
+    years=np.unique(np.concatenate([[start_year],np.arange(np.ceil(start_year/1000.)*1000.,end_year+1.,1000.),[end_year,2000.]]))
     guard(len(years)*len(indices)*3*4*2+50_000_000)
     catalog_digest=hashlib.file_digest((DATA/'catalogs/stars.json').open('rb'),'sha256').hexdigest()
     digest=hashlib.sha256(catalog_digest.encode()+indices.tobytes()+years.tobytes()+b'fixed-ICRS-galpy-v2').hexdigest()
     ro,vo=8.122,229.;scale=conversion.time_in_Gyr(vo,ro)
     pos=np.zeros((len(years),len(indices),3),dtype='float32')
     packdir=DATA/'catalogs/stellar-checkpoints';packdir.mkdir(exist_ok=True)
-    (packdir/'README.md').write_text('# Stellar checkpoints\nResumable galpy batches. These files are retained; rebuild when the source catalog checksum changes.\n')
+    (packdir/'README.md').write_text(
+        '# Stellar checkpoints\n\n'
+        f'Resumable galpy MWPotential2014 batches for `../galactic.npz`, spanning Julian epochs {start_year:.6f}–{end_year:.6f} TT. '
+        'Positions are parsecs in fixed ICRS axes. Source catalog, model parameters and long-term limitations are documented in `../README.md`. '
+        'Rebuild after changing the source catalog or date bounds.\n')
     for start in range(0,len(indices),512):
         idx=indices[start:start+512];checkpoint=packdir/f'{digest[:10]}-{start:07d}.npz'
         if checkpoint.exists():
@@ -65,8 +72,10 @@ def build(limit_mag=6.5):
             for k,year in enumerate(y):pos[np.where(years==year)[0][0],start:start+len(idx)]=coordinates[k]
         np.savez_compressed(checkpoint,position=pos[:,start:start+len(idx)])
         log(f'Galactic trajectories: {min(start+512,len(indices))}/{len(indices)} supported stars checkpointed')
-    path=DATA/'catalogs/galactic.npz';np.savez_compressed(path,years=years,indices=indices,positions=pos,catalog_sha256=catalog_digest,configuration_sha256=digest,
+    path=DATA/'catalogs/galactic.npz';tmp=path.with_name(path.name+f'.{os.getpid()}.tmp')
+    with tmp.open('wb') as f:np.savez_compressed(f,years=years,indices=indices,positions=pos,catalog_sha256=catalog_digest,configuration_sha256=digest,
         model='galpy MWPotential2014; ro=8.122 kpc, vo=229 km/s, zo=0.0208 kpc; Schoenrich solar motion')
+    os.replace(tmp,path)
     record(path,'https://docs.galpy.org/en/v1.12.0/','galpy BSD; source catalog attribution applies')
     log(f'Completed Galactic stellar-motion pack: {len(indices)} stars, {len(years)} epochs; absent velocities still use flagged rectilinear estimates')
 

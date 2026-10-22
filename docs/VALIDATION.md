@@ -12,7 +12,7 @@ A progress concurrency test pauses real preparation at 250 of 500 stars, verifie
 
 ## Reconstruction verification
 
-A one-year initial reconstruction benchmark published 11 validated chunks and retained a resumable checkpoint. Long-range chunks independently check off-node interpolation and tighter integration, record JPL overlap residuals, and report local tidal-lag sensitivity. Chunks failing gates are not served. Full 100,000 BCE–20,000 CE planetary coverage remains dependent on completing the long background integration. Its progress and ETA are measured from local throughput, not promised in advance.
+A one-year initial reconstruction benchmark published 11 validated chunks and retained a resumable checkpoint. Long-range chunks independently check off-node interpolation and tighter integration, record JPL overlap residuals, and report local tidal-lag sensitivity. Chunks failing gates are not served. The active 15,000 BCE–5,000 CE range has DE440/DE441 coverage except for the 1,800-year interval before DE441's 13,201 BCE start, which is covered by accepted v5 reduced-model chunks. Numerical checks do not make that ancient extrapolation a validated historical reconstruction.
 
 ## Visual checks
 

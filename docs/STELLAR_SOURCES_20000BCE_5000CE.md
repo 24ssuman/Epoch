@@ -2,6 +2,8 @@
 
 Research date: 2026-10-21. This is a literature/source comparison, not a numerical validation or runtime change.
 
+This comparison was written for an earlier 20,000 BCE–5,000 CE target. The simulator's active supported interval is now 15,000 BCE–5,000 CE; the deeper-time discussion below is retained as research context, not as current data coverage.
+
 ## Conclusion
 
 Modern astrometry plus stellar-motion propagation and long-term Earth precession can produce modelled star maps across this interval. None of the sources checked supplies an observed or uniformly validated all-star reconstruction of the entire interval. Catalogue epoch, software input range, model fit accuracy and physical predictive uncertainty are different quantities.

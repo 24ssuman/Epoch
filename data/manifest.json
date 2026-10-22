@@ -99,10 +99,10 @@
   },
   "data/catalogs/galactic.npz": {
     "url": "https://docs.galpy.org/en/v1.12.0/",
-    "sha256": "b57e2a1c93b8b3a4438b41050ecb650defd588dcfb9bdd1eb0315c9e2972afca",
-    "bytes": 11962225,
+    "sha256": "de5d069d4be36eec3caef44f442e45e5564701fbf7123a91d0535fc8496787f6",
+    "bytes": 2054561,
     "license": "galpy BSD; source catalog attribution applies",
-    "installed": "2026-10-21T09:37:20+0530"
+    "installed": "2026-10-22T12:08:35+0530"
   },
   "data/kernels/de441.bsp": {
     "url": "https://ssd.jpl.nasa.gov/ftp/eph/planets/bsp/de441.bsp",
