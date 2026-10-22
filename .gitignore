@@ -10,6 +10,7 @@ data/catalogs/
 data/jobs/
 data/comets/
 .DS_Store
+/books/
 AGENTS.md
 PLAN*.md
 LOG.md
