@@ -2,10 +2,6 @@
 
 A local astronomical observatory showing the sky from Earth. Built with React, TypeScript, Three.js and a Python/FastAPI scientific service.
 
-## Project website
-
-[Open the browser-based Epoch sky viewer](https://24ssuman.github.io/Epoch/). The separate `gh-pages` branch serves a no-install static viewer with 1,002 precomputed sky frames from 15,000 BCE through 5,000 CE. It steps between saved frames at a target interval of 20 years; it does not calculate dates between frames, interpolate, or extrapolate outside its bundled endpoints. The hosted view uses the saved Kolkata observer. The full local simulator below supports its interactive calculation workflow and additional observing controls.
-
 ## Run locally
 
 ```sh
