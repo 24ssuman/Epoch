@@ -12,3 +12,17 @@
 - [PERFORMANCE.md](PERFORMANCE.md) and playback-performance.json: exact-frame benchmarks, scientific equivalence, ground-only UI and collapsible Moon phase verification.
 
 - [MOON_LIGHTING.md](MOON_LIGHTING.md): primary lunar-light references, phase-dependent glow and its display limits.
+
+## Coverage and accuracy
+
+The interface is limited to **15,000 BCE–5,000 CE** (astronomical years −14999 to +5000, JD −3,757,212.5 to 3,547,636.5; narrowed on request from 100,000 BCE–20,000 CE and then from 20,000 BCE on 2026-10-22). Dates outside it are rejected by the API, the date dialog and the job controls. Out-of-range v5 trajectory chunks and stellar epochs have been removed; the accepted boundary chunk is clipped to the first supported Julian date. DE441 remains a wider shared input because its in-range ephemeris data is required. To change the range, see [Extending the date range](../backend/README.md#extending-the-date-range). This is not a claim that all celestial objects can be reconstructed accurately over that interval.
+
+Installed data includes complete JPL DE440 and DE441 kernels, 119,625 HYG/Hipparcos stars, 709 directly measured JMMC stellar diameter matches, a Galactic-motion pack for bright-star candidates, 16 massive-asteroid initial states/GM constants, and bounded JPL comet apparition packs. The full optional Gaia G≤12 expansion was deferred to prioritize prominent stars; its partial download is retained and can be resumed explicitly.
+
+DE440 is preferred within its coverage; DE441 extends approximately from astronomical year −13200 to +17191, so within the supported interval the planets before about 13,200 BCE (roughly 15,000–13,200 BCE) need the background generator. Giant-planet states use system barycenters. Modern apparent directions include light time, parallax, aberration, solar deflection and IAU precession/nutation. Earth rotation uses bundled IERS observations/predictions where available, historical ΔT modelling in its published interval, and explicitly assumed rotation elsewhere. Ancient local clock times are not known precisely.
+
+Outside ephemeris coverage, planets appear only after the background generator publishes a numerically validated chunk. Until then, the interface shows the missing coverage explicitly. Deep-time stars use a bounded galpy MWPotential2014 pack where adequate motion data exists; other stars retain labelled rectilinear/unknown-radial-velocity assumptions. Constant stellar luminosity, extinction and photospheric size are assumptions, especially for variable and evolved stars.
+
+Colors use measured color indices and a blackbody approximation; calibrated per-star spectra are not bundled. Atmosphere is a numerical single-scattering standard-air Rayleigh/Mie model, not a weather reconstruction. Multiple scattering and ozone absorption are omitted. Planetary photometry, Saturn rings, star variability, ancient geography and comet brightness/tails have explicit approximation limits. These are not event-grade eclipse or ancient-alignment predictions.
+
+Read [scientific methods](SCIENCE.md), [validation](VALIDATION.md) and [data provenance](../data/README.md).

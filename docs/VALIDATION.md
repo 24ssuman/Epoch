@@ -1,6 +1,6 @@
 # Validation and remaining coverage
 
-The automated suite checks independent astronomy results, API behavior, offline use and genuine in-flight progress. Run `.venv/bin/python -m pytest -q` from the workspace.
+The automated suite checks independent astronomy results, API behavior, offline use and genuine in-flight progress. Run `python -m pytest -q` from the workspace.
 
 ## Independent numerical checks
 
