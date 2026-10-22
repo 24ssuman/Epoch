@@ -1,0 +1,1066 @@
+{
+  "data/assets/earth.jpg": {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/textures/planets/earth_atmos_2048.jpg",
+    "sha256": "2faa400d1eade3bc44caf6750d1b772bd9bbb6d87362c02bc7c3304e78fa0a9d",
+    "bytes": 512606,
+    "license": "NASA Earth imagery / three.js examples; present-day illustrative geography",
+    "installed": "2026-10-21T09:13:10+0530"
+  },
+  "data/assets/moon.jpg": {
+    "url": "https://raw.githubusercontent.com/mrdoob/three.js/r160/examples/textures/planets/moon_1024.jpg",
+    "sha256": "fcb0f1f5548e6e18d40063dd55c6aacd3daedf2407b181dab85b61e22bf9fe57",
+    "bytes": 238093,
+    "license": "NASA lunar imagery / three.js examples",
+    "installed": "2026-10-21T09:13:10+0530"
+  },
+  "data/catalogs/hyg.csv": {
+    "url": "https://raw.githubusercontent.com/astronexus/HYG-Database/main/hyg/CURRENT/hygdata_v41.csv",
+    "sha256": "d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd",
+    "bytes": 33932548,
+    "license": "CC BY-SA 4.0; David Nash / HYG; underlying Hipparcos/Yale/Gliese catalogs",
+    "installed": "2026-10-21T09:22:30+0530"
+  },
+  "data/kernels/asteroids.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+    "sha256": "36aaa372fcf40d808713e1571d8868162ea6a61b7cca1842fdf2065fdf095737",
+    "bytes": 10042,
+    "license": "NASA/JPL Horizons; orbit solutions and GMs retained per target",
+    "installed": "2026-10-21T09:20:36+0530"
+  },
+  "data/kernels/gm_de440.tpc": {
+    "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/gm_de440.tpc",
+    "sha256": "924ddf4fb9ead9fe8a1aa55780bcabde40b09d00065d58226e24b68d8092f140",
+    "bytes": 12406,
+    "license": "NASA/JPL SPICE constants",
+    "installed": "2026-10-21T09:18:32+0530"
+  },
+  "data/comets/Halley-1985.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271985-01-01%27&STOP_TIME=%271987-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "f1ad0715ef928de23937a7f01dd36d5df69196ba365f337df9a09dafc24532cf",
+    "bytes": 53223,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T09:18:37+0530"
+  },
+  "data/comets/Halley-2060.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272060-01-01%27&STOP_TIME=%272062-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "cfcc7e80c0acd8298b10a0cc14cf36e6ee6f05fb8a1c1eb672238c11f85d13fa",
+    "bytes": 53624,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T09:18:48+0530"
+  },
+  "data/comets/Encke-2025.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D2P%3B+CAP%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272025-01-01%27&STOP_TIME=%272028-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "3ce3ad63d3ec73846b0fa057c5971500d3487433f3c62a4f28c9beec6f301d06",
+    "bytes": 70564,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T09:19:15+0530"
+  },
+  "data/comets/Hale\u2013Bopp-1996.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1995+O1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271996-01-01%27&STOP_TIME=%271998-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "b16f52c8ee89d32d787bab4b358ec02a2008dd8064f2baef1823d7262ea6a5cb",
+    "bytes": 53646,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T09:19:21+0530"
+  },
+  "data/kernels/de440.bsp": {
+    "url": "https://ssd.jpl.nasa.gov/ftp/eph/planets/bsp/de440.bsp",
+    "sha256": "a4ce9bf9b3282becc9f4b2ac3cebe03a2ae7599981aabd7265fd8482fff7c4b5",
+    "bytes": 119799808,
+    "license": "NASA/JPL; public scientific data, retain attribution",
+    "installed": "2026-10-21T09:22:30+0530"
+  },
+  "data/references/horizons.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+    "sha256": "c99bba5f85488a39da3773519d112144c6c8dc9d259c6795261cd5278fa11f1d",
+    "bytes": 17055,
+    "license": "NASA/JPL Horizons; reference frame IAU76/80, TT, airless topocentric Greenwich",
+    "installed": "2026-10-21T09:24:16+0530"
+  },
+  "data/catalogs/JMDC-ReadMe.txt": {
+    "url": "https://cdsarc.cds.unistra.fr/ftp/II/345/ReadMe",
+    "sha256": "1eb49154bf1712c4f3012c993de020b77842081a8a749ab3c953a0fe9417aef1",
+    "bytes": 9878,
+    "license": "JMMC / CDS; cite Chelli et al. 2016 A&A 589 A112",
+    "installed": "2026-10-21T09:27:49+0530"
+  },
+  "data/catalogs/jmdc.dat.gz": {
+    "url": "https://cdsarc.cds.unistra.fr/ftp/II/345/jmdc.dat.gz",
+    "sha256": "ddbe34d47d25076adfb1d824226e80d899048f62db234dab381f36892b918693",
+    "bytes": 43440,
+    "license": "JMMC Measured Stellar Diameters Catalogue, Duvert 2016 / Chelli et al. 2016 A&A 589 A112; original measurement references retained",
+    "installed": "2026-10-21T09:37:15+0530"
+  },
+  "data/catalogs/diameters.json": {
+    "url": "https://cdsarc.cds.unistra.fr/ftp/II/345/",
+    "sha256": "fbdff5c78a6a9134a761047c65a836f99f73e3432e84e3b57958a3e7de63e507",
+    "bytes": 310643,
+    "license": "JMMC JMDC; source references retained; ambiguous component measurements excluded",
+    "installed": "2026-10-21T09:37:16+0530"
+  },
+  "data/catalogs/galactic.npz": {
+    "url": "https://docs.galpy.org/en/v1.12.0/",
+    "sha256": "b57e2a1c93b8b3a4438b41050ecb650defd588dcfb9bdd1eb0315c9e2972afca",
+    "bytes": 11962225,
+    "license": "galpy BSD; source catalog attribution applies",
+    "installed": "2026-10-21T09:37:20+0530"
+  },
+  "data/kernels/de441.bsp": {
+    "url": "https://ssd.jpl.nasa.gov/ftp/eph/planets/bsp/de441.bsp",
+    "sha256": "9a824e6a8ce3d39f8a513b17278ff7b7ad226f964c76d2019b0a51d8808d6ff5",
+    "bytes": 3307878400,
+    "license": "NASA/JPL; public scientific data, retain attribution",
+    "installed": "2026-10-21T09:52:15+0530"
+  },
+  "data/catalogs/stars.json": {
+    "url": "https://github.com/astronexus/HYG-Database/tree/main/hyg/CURRENT",
+    "sha256": "cd9d1999d88a4003a7c06c8ce82e8136351b2bd18c6b4a2d91c663e2841e5c6c",
+    "bytes": 33274538,
+    "license": "Processed HYG 4.1 / Hipparcos; CC BY-SA 4.0; David Nash; source CSV retained",
+    "installed": "2026-10-21T10:18:00+0530"
+  },
+  "data/comets/Halley-1910.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C1911%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271909-06-01%27&STOP_TIME=%271911-06-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "4c7eeee7da990129eb76af969db8e3a3b2dc5ef86e39372a7dd778bffcdb9255",
+    "bytes": 37492,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:06+0530"
+  },
+  "data/comets/Halley-1835.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C1836%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271835-01-01%27&STOP_TIME=%271836-06-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "2eb7c6230145a3da726b8eeed36968fb5cd6064114acf790b391259c20d93b4a",
+    "bytes": 27334,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:09+0530"
+  },
+  "data/comets/Halley-1759.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C1760%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271758-06-01%27&STOP_TIME=%271759-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "f53d51faaf81c2b09f5178da5b42c63205e4ed966c23c8c3ba21532d7fc73d68",
+    "bytes": 28931,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:13+0530"
+  },
+  "data/comets/Halley-1066.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C1067%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271065-12-01%27&STOP_TIME=%271066-09-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "02f29ce96c90bbfd36b3dfee75b1d8ec460ab585aba17e70b036a0c0ce5163e5",
+    "bytes": 15770,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:15+0530"
+  },
+  "data/comets/Halley-BCE0012.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C-10%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%27BC+12-Jun-01%27&STOP_TIME=%27BC+12-Dec-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "356a832610f9f6ffa36ca12fd49b5dfa4089b720f445ac2e09ee4fb00d8ad704",
+    "bytes": 11507,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:18+0530"
+  },
+  "data/comets/Halley-BCE0240.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C-238%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%27BC+240-Jan-01%27&STOP_TIME=%27BC+240-Sep-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "d94e877e3bc8940773fc4c105d461b35797374f52f0337f141b0de5ec669994f",
+    "bytes": 14401,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:21+0530"
+  },
+  "data/comets/GreatComet-1811.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1811+F1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271811-03-01%27&STOP_TIME=%271812-08-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "01f903e1111d024f5ce06fb4fbffbbe42204d8a3fc811eac9c4c7755c66fc2bc",
+    "bytes": 27622,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:26+0530"
+  },
+  "data/comets/Donati-1858.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1858+L1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271858-06-01%27&STOP_TIME=%271859-03-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "1ba52acd32c7ee370d94399bce2e30f540fa437a40bcba5ff6f24f381b9a5441",
+    "bytes": 15739,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:29+0530"
+  },
+  "data/comets/GreatJanuary-1910.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1910+A1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271909-12-20%27&STOP_TIME=%271910-05-31%27&STEP_SIZE=%272+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "67fa0469332d4dc508713152e0a73e46337b531a45a243f5b1dde13b039da20e",
+    "bytes": 48472,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:37+0530"
+  },
+  "data/comets/IkeyaSeki-1965.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1965+S1-A%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271965-09-20%27&STOP_TIME=%271966-01-31%27&STEP_SIZE=%271+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "675bd322c2914107a1d781f6b86a9253d645a31a0abeecd17088667188cb90ea",
+    "bytes": 78914,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:44+0530"
+  },
+  "data/comets/Bennett-1970.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1969+Y1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271970-01-01%27&STOP_TIME=%271970-08-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "111a6819482542af08c1eb2a20eb81d0de4466568274f07a84db25a8d3b8ed48",
+    "bytes": 12876,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:46+0530"
+  },
+  "data/comets/Kohoutek-1973.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1973+E1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271973-06-01%27&STOP_TIME=%271974-06-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "af2e44862f63c5cd7a0c6ffd1d7be3c46b023bdb1e13ca4d381a162fd552d6ed",
+    "bytes": 20170,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:52+0530"
+  },
+  "data/comets/West-1976.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1975+V1-A%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271975-11-01%27&STOP_TIME=%271976-07-31%27&STEP_SIZE=%276+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "50ae79877f53316677db84bd3dca7f41c964c21a02b319b2fa675c8baf3e0bbe",
+    "bytes": 27460,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:55+0530"
+  },
+  "data/comets/SwiftTuttle-1992.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D109P%3B+CAP%3C1993%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271992-01-01%27&STOP_TIME=%271993-06-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "e6b952226d6c80d3a87e97360d057d2b62920f273a5477177a591451883b5a65",
+    "bytes": 27500,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:43:59+0530"
+  },
+  "data/comets/Hyakutake-1996.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1996+B2%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271996-01-01%27&STOP_TIME=%271996-08-31%27&STEP_SIZE=%276+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "3964dec1c9b6ff910a390e63a6ac66e8f820dea98381c2533fd1370c8c5cc53a",
+    "bytes": 24560,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:02+0530"
+  },
+  "data/comets/TempelTuttle-1998.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D55P%3B+CAP%3C1999%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271997-06-01%27&STOP_TIME=%271998-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "0dda478a8717b59e816c72d34f5dcbbd73189077dd724c5a4bd2afea20a7c32a",
+    "bytes": 28919,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:05+0530"
+  },
+  "data/comets/McNaught-2007.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F2006+P1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272006-10-01%27&STOP_TIME=%272007-06-30%27&STEP_SIZE=%276+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "d43f440d6e6c47360529f8f64f56f7fa5c3cca10664cb47c4fea87f5739e4aa7",
+    "bytes": 27223,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:09+0530"
+  },
+  "data/comets/Lovejoy-2011.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F2011+W3%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272011-11-27%27&STOP_TIME=%272012-04-30%27&STEP_SIZE=%271+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "a46ec8dc6ff5ea3745b2926db2822e1a8d176a431ac2dbb198c2cb93e0f7d6b8",
+    "bytes": 91523,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:17+0530"
+  },
+  "data/comets/ISON-2013.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F2012+S1%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272013-01-01%27&STOP_TIME=%272013-11-28%27&STEP_SIZE=%272+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "b9ec058cb7ba6716e52efd094dead3ac96d76f177f88f29e1fb37d5f36ddaddb",
+    "bytes": 96763,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:24+0530"
+  },
+  "data/comets/NEOWISE-2020.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F2020+F3%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272020-03-27%27&STOP_TIME=%272020-12-31%27&STEP_SIZE=%276+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "1e11c6d95eb4118ab96d8d4122eb9552dc7e79058f1dda57006c20d4e10f17eb",
+    "bytes": 27890,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:28+0530"
+  },
+  "data/comets/PonsBrooks-2024.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D12P%3B+CAP%3C2025%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272023-06-01%27&STOP_TIME=%272024-12-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "f7a7b4498f55183344e513344ec9226ed93af376f74abb30f424781cb908e8aa",
+    "bytes": 28854,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:31+0530"
+  },
+  "data/comets/TsuchinshanATLAS-2024.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F2023+A3%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272024-03-01%27&STOP_TIME=%272025-03-31%27&STEP_SIZE=%276+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "d8f45a351107b235a1b6733cebb12d54d96a0e404fa00307c5dd0178e295283c",
+    "bytes": 38681,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:35+0530"
+  },
+  "data/comets/SwiftTuttle-2126.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D109P%3B+CAP%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%272126-01-01%27&STOP_TIME=%272127-03-31%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "8192e46df32a752115c464fb350486d5767b169df99df9c002b5b9c79594a332",
+    "bytes": 23069,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:44:38+0530"
+  },
+  "data/comets/Halley-0837.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3D1P%3B+CAP%3C838%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%27AD+836-Dec-01%27&STOP_TIME=%27AD+837-Sep-30%27&STEP_SIZE=%2712+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "7755387163354f959b13910f38a8d080627fadfd483143ac25aef7453c8a2e2a",
+    "bytes": 15904,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:45:01+0530"
+  },
+  "data/comets/GreatSeptember-1882.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1882+R1-B%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%271882-08-25%27&STOP_TIME=%271883-03-31%27&STEP_SIZE=%271+h%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "a24a5c9254ba836d4600ea6c3eab8c7a497657e9a22f1873e4e8de3308c86334",
+    "bytes": 127501,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T12:45:14+0530"
+  },
+  "data/references/crosscheck/geo-10.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "8d4f3636889b6b2460f38a4605b1a6003ba5508bdd9f059ca4be79b8898ee946",
+    "bytes": 8843,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-301.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "a0c213a5748e733a8793c722498be55e6d69876f5622426f5f8efdc297f2585a",
+    "bytes": 8846,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-199.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "983d655e1a5c80fb155848f6f1087f0a1aa6a7f82aceadd5e328961dbe1e0336",
+    "bytes": 8844,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-299.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c2a7492101e2850a0b7bd384f2f88e76b80e259668c3dbae0c307d2004135253",
+    "bytes": 8844,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-4.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "e80c94bb382f8a303c737bb040f98de1da1218964f4d0ca69a5bf758dc532956",
+    "bytes": 8794,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-5.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "253db783dfbc9b1e96e6172bab61e671d72f834394d25528a864c34d76bf40a1",
+    "bytes": 8794,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-6.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "742ecc65c02611491d6d49462f5374096eea14f39f31fdfaf9b88024d2fadda0",
+    "bytes": 8794,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-7.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "742e6c8241de540424cfcd82de80dd5b6a3edf292a6e379ea9dbaa5f8bbfe4a6",
+    "bytes": 8794,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-8.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "9d88b50a38a1dd180c0c0aa74722fbec06207a0a8fd30aa1888f65eb50a2389a",
+    "bytes": 8794,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-9.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "27d9df922037b7c8b19cc8cc1842f5ccc398e9dff8df58167dc23b994bb9effd",
+    "bytes": 8794,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-499.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "06c474be596f7eb86f5fc869d89e55d5313ea34627a7347fd715616ac6ce1a9f",
+    "bytes": 6902,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-599.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "2eab5f2871a81d5a8ade508fe8eb2be2f3865f1a7d08a72ab2e997ce4a234833",
+    "bytes": 6917,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-699.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "63b88bfa697fa4c47b58392206bdc15ca016f8dd99f28fcb2ec707d6541bd1e7",
+    "bytes": 6903,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-799.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "406673b2f5c8c5dbf0da47b38679de0e1cc81c76bba385936490336167af9c52",
+    "bytes": 6909,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-10.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "56c4f1630a003cacd5993427768a77a9534d47ed4a1e7150f3101ae2126b2148",
+    "bytes": 10126,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-301.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "6b0e7f3eabdc361afbc73bcc452384dbf5321c98d7a2b4785b832cbdfdaff32a",
+    "bytes": 10129,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-199.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "6c4ddf43147e8c7ff7995b1ca3d5b3d2cb00db9a6f3a191354ff6d648ab92ff0",
+    "bytes": 10127,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-299.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "3c1a40a3f9093af96fce7b389598064c00027755e151ffb3169cddedba282bde",
+    "bytes": 10127,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-4.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "7d33712e7c82aabd0a63539a30e33a615ce47ad6cbf8413966cc17035040471c",
+    "bytes": 10077,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-5.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "b9484a4ec77a6813f79751ffd864ddb5c4cd619c1498ba0467a71d63915c3c9c",
+    "bytes": 10077,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-6.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "0ae040fcb06cdaaa8d832c2e579fb9d4e2ecc76a93d90e7950be43de6357a8d6",
+    "bytes": 10077,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-7.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "d9aa8a8523cd5d6126fa7f5f2f326782e58896fd6f33359c0ed6fca4000c9f29",
+    "bytes": 10077,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/topo-8.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "753bc7defe46cc74e780cd8a416a27e9b53d1642d366e0efd6ca3a0e53363bb5",
+    "bytes": 10077,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/deltat.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "5dbd35cf96eb25034ea9c0ac73b2f3ce9c13c93aef792494768e630d2c603d09",
+    "bytes": 10425,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/-1999--1900.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "2c816860792df669c7b46f8561adb848d476657c7c1a2f25e737b45e83dfb24d",
+    "bytes": 105469,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/-1499--1400.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "2338cce2f349fd2a508a6f6f5f2910bc6776025d4abc065c5d0b2d88f0fbe6e5",
+    "bytes": 104700,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/-0999--0900.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "1e6f10afe3390740a7213e66a155387722a15fc78371b9b8e239e02965d32b54",
+    "bytes": 103975,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/-0499--0400.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "d3737bf221b0c354e517d57390ee0a6692843f8ff5feef20aa2c094d0f8bc101",
+    "bytes": 109651,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/-0099-0000.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "5063fe92d1e1786fca49ac566777041e4feda55deb9fe84771cb389825b2afda",
+    "bytes": 112041,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/0001-0100.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c31a617f5d66f53b2482fc8c9a5a38b5f1b17260b9abc482b9eae7f3460ea597",
+    "bytes": 110402,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/0501-0600.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c1ea0afd551f556d2f5e7181f72d066b73012891f1cd03f449ff614ff7c02f4b",
+    "bytes": 111473,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/1001-1100.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "90f51615116237cbe407201b009c163b0eb70775684ef1fc48c6ad7ca27cc04d",
+    "bytes": 108741,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/1501-1600.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "5ce0b29108c519a637d744bbc75b812f345f37d0dcb11c9b7fbda22469e3071c",
+    "bytes": 104503,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/1801-1900.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "fad2174dd56b9c663db73975a83bedc1136a4bb3a79248f6ff0fcab9f51a848f",
+    "bytes": 109015,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/1901-2000.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "1daf90d8b3f1763a09b45cc0d838150fc09edbef711fe1be80f2e0c0d8f6d5ff",
+    "bytes": 129405,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/2001-2100.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "a9c08f5b4b51d5c85ccfa18d8bfccd98ec8a7d93f06e2d40691943b4105acf9e",
+    "bytes": 127736,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/2101-2200.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "ab4ce2a70cd658daf1aa932ea978ec35785101ecf35ef448738e05f07a9bc313",
+    "bytes": 106565,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/2501-2600.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c9f6891662fad9c7dfaea703119c6af553ac7b0ba8a8be16ad8f037dc61375ad",
+    "bytes": 102955,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/eclipse/2901-3000.html": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "38f866f3a11870a810625b35425a3423685bfc3df4a93e80ac5986144644ab2a",
+    "bytes": 107756,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Bennett_1970-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "9edb6b3eac56cba0d5322f7e404d869deae39cb01e460ccf4f68ab3ed0684201",
+    "bytes": 7116,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Bennett_1970-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "59867cc6e38e562b95995b88af00db8afa44460d6bd179ada2c6ba2366f3cdea",
+    "bytes": 7025,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Donati_1858-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "f5f6900f4bdb40d872b8fb27a1bdaf2033a88c4ccc41b131f231a507653c377f",
+    "bytes": 7118,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Donati_1858-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c4a0c32275caede3ed1c7a5a03172e80b6607f707386b81d7246266dc6038cd6",
+    "bytes": 7028,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Encke_2026-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "eef64e769e7ddf2ddba7d0c208af21ade29de732fba561da1a9c28192e303421",
+    "bytes": 7525,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Encke_2026-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "732367497b7140e9707edd3b1ec5b50ddc814257b26a8b0901a0f3aebd201f8d",
+    "bytes": 7434,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Great_Comet_1811-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "ab3d1cfc1431bbb98d05f60d734d7aa2765e52bb65cc076d5bf91b999521c5f3",
+    "bytes": 7118,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Great_Comet_1811-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "e386048e441e0decc2685769eef9b98ffc8427ae411673fd0093815f3292b571",
+    "bytes": 7028,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Great_January_Comet_1910-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "cbe1f66dff9b6b67aae24e942a1f1dbe650a0a1e7248a3a1494e2f5aa1119e1f",
+    "bytes": 7116,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Great_January_Comet_1910-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "70dd090f349cbda995df1dcd08adba66ecf38969e76fa7f29f0218f185a8a265",
+    "bytes": 7025,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Great_September_Comet_1882-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "3db2ad9cf52b6b8d6bd14eb28714517c07c929dbeb5908ead65beb64b5617b92",
+    "bytes": 7134,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Great_September_Comet_1882-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "1dd595c8057bf9a10767b4027eb266a1511a3229222c961ba7d8203e38e95947",
+    "bytes": 7047,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/comet-Hale_Bopp_1997-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "1c8e5bad114b1b152d0080d01924d675a65a6919e1a492d9e1ca24e60310fd06",
+    "bytes": 7118,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Hale_Bopp_1997-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "5b0067d46975feef78fa7d6e4b54ab146809efb2b1d894d881936ed0d564dd6c",
+    "bytes": 7027,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_837-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "3edcd763669d6b1faf518291f09e791f86e9d7292b876157d1ef5d013da95ff6",
+    "bytes": 7120,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_837-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "5e4a8332dcf779fa7c8503bf41dbe6e01d99027860b53291bf3003bf40da87cc",
+    "bytes": 7029,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1066-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "e0de0553f71d4b020e48638c42a0e6adfdbea856420c9f10b437b178c8e8da76",
+    "bytes": 7121,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1066-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "466137c8cc986b82dc9bde4c4472d394461902c0b9728f7a680b742febb8dc90",
+    "bytes": 7031,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1759-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c8a91836c257f409808ced397c95d56ddea851e99138d466b8e89fee8022687e",
+    "bytes": 7121,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1759-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "e1a3fd19d4eb7180092b74c7aec349897fb92a95e7cb67addc38a1fe3658f585",
+    "bytes": 7031,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1835-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "74989a86edaa3c7c2fa5f78d01710e7e612d6680bc175c4b1b99e795cca9d151",
+    "bytes": 7121,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1835-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "2a6f47ebec101d899e757d75215b1eac15900765c2696ec583b66b288d21d650",
+    "bytes": 7031,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1910-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "96796a3f019f6ef829806cfbd09a366f77184a18df9b8ce6bc084bfe894eac39",
+    "bytes": 7121,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1910-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "668474e3588ac8e7cf53f33fb978b70657cb0b6371e503a4bf3a49b5d28ae4ab",
+    "bytes": 7031,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1986-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "0176f4e1f270ff89eac6f7cb282e12419a79915faa429a5e1e9d681034027dd2",
+    "bytes": 7520,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_1986-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "fd61dcc15002f238f68f8faeb49e0cc9ae0aeb6b3701db98a0e7f35684947a62",
+    "bytes": 7429,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_2061-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "a87dd138d1fd666417db8367a6045c205657dd2487ecfe187508b0487ac5b051",
+    "bytes": 7520,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_2061-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "49c4cefeee0906b666fb023a18dc7a94156b1588b7c232abf8e405288cb8b6ec",
+    "bytes": 7429,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_12_BCE-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "24d319bb7c2dc47bba6b92970f6e93323adaa21187c1342775e4afd217b5e91c",
+    "bytes": 7120,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_12_BCE-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c48d8df8c625adf912b1765aacd22fd09566754552da2a68f5744f2fc0a0205e",
+    "bytes": 7029,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_240_BCE-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "9a80428aecdea7ef1048c34a4c7059aa3597dd1d660c37980d395b403fbb838a",
+    "bytes": 7121,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Halley_240_BCE-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "0a6c060f08a4f46196c71c0d1494523b3cf8116fe5f99693ea5343aec021ef53",
+    "bytes": 7031,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Hyakutake_1996-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "cb3cd7e6d2eff727181aa5800d3f935a56a4453d266dba6a4ea726d9bf314668",
+    "bytes": 7522,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Hyakutake_1996-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "7859e7013c8e78b571f983a77619628ae310d9e51b19bff97dd771a40b6d130d",
+    "bytes": 7431,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-ISON_2013-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "5395dd27de4359b0e0e901a81aa61f97178dab463b820cf9d284ab9c8d0d5de2",
+    "bytes": 7522,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-ISON_2013-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "e15e5eaaf23f22c91b73129dcfae65ad1ddf5f8163bf5294ff4b74d84d28167e",
+    "bytes": 7431,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Ikeya_Seki_1965-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "49c61d337fb5c3579948936d25b70693d11fd0d0e6eec72bd281860a87c8270e",
+    "bytes": 7124,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Ikeya_Seki_1965-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "061220ab94f9d52485658e57ff1833abf245c8bbf8841296a31a127de2ef19cd",
+    "bytes": 7034,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Kohoutek_1973-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "0c55fef33a368c2a2a6df517bd209a3f20f3514a503ac04bacb404169918b5ea",
+    "bytes": 7116,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Kohoutek_1973-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "7f98c9443eb0cefb02f3ccd931e46a77dc71027c1df7400dbb8894440626a72b",
+    "bytes": 7025,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Lovejoy_2011-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "f24ef18572e18b798aee6c6e6dcd8fa291d96df88f2f8e5eb7549410d692dbb8",
+    "bytes": 7125,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Lovejoy_2011-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "01f7990be9055e5c88a4debe08743e913c7e9bd5f0146082c1bce41f57572f5f",
+    "bytes": 7034,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-McNaught_2007-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "e5adff22fa2655f1922fef3db1517c292dc99d2c4c393bed75369d7aa006c55d",
+    "bytes": 7117,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-McNaught_2007-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "dba4b54692d2d4588e0438ca047ce04fdcf050f48b495a1cde724113371f5dda",
+    "bytes": 7026,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-NEOWISE_2020-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "c728d9a7bcea6151906aedf00be1b23f8623d563e3f703f4a88e93929c43d01d",
+    "bytes": 7117,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-NEOWISE_2020-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "bc29b02782cb0f56b68e78819a677cc71d6194ff5c51940dbd19832bb129c921",
+    "bytes": 7026,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Pons_Brooks_2024-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "1a0614a56af93282d2ded2342f824d21a5ec59601696178e107d1eb796870871",
+    "bytes": 7126,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Pons_Brooks_2024-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "6222c9f081bebbbf5b5b7a699b480bd4726c302e602f90817414aebeb9684ffa",
+    "bytes": 7035,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Swift_Tuttle_1992-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "363a551349d0aee6c8b0a6b97670adbdfcfac9a5470bb0824f01fb2fb0597ccf",
+    "bytes": 7123,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Swift_Tuttle_1992-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "988c63efd976158c09947b842bcff81e1f5b4002f3767173a670b9c5b6d920ae",
+    "bytes": 7033,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Swift_Tuttle_2126-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "18b42676f81785d86e2a4c6f7897fb417d3e8394407610b5cb824dc8fc550ff8",
+    "bytes": 7117,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Swift_Tuttle_2126-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "38202776f535e7ae233f25a666623d8d64460f4e4d8decbaf6d9f7cc4410c5df",
+    "bytes": 7026,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Tempel_Tuttle_1998-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "b334b1f922465fb8fb358421c937458345158792c8f2cf8d577ec2d4aebd5854",
+    "bytes": 7531,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Tempel_Tuttle_1998-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "2f127146a26727207ee35c2291d0982d04c3fee5c8c6cb4c44e95669d7c3267e",
+    "bytes": 7440,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Tsuchinshan_ATLAS_2024-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "53fae83d75118680f4a57a3df4d3b4d70a848b654b6563b5f1beecd91cd4670a",
+    "bytes": 7527,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-Tsuchinshan_ATLAS_2024-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "32919cd3e55031d204b26f05205c7701d792792b2103108bac85dddec6c4011c",
+    "bytes": 7436,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-West_1976-vec.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "a93b1f708e7ed17a090be2d1179b824cd872f02925a02882b8861110d9c4b980",
+    "bytes": 7122,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/comet-West_1976-obs.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "343e1baf535802fcc5a82568474f48cbb82d86c77e3bd31565949114c4613b37",
+    "bytes": 7035,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/geo-899.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "426967f76039bcea6243b5cef9b34da057d1c79ccc362418f3ba9545c0ed7761",
+    "bytes": 6925,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/references/crosscheck/geo-999.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "3e8807159a32fb172069d5c81dd130326574a146f1c5c1b4b9f9888944450afe",
+    "bytes": 6917,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:57+0530"
+  },
+  "data/comets/dense/GreatSeptember-1882.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1882+R1-B%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%27JD2408705.208333%27&STOP_TIME=%27JD2408707.208333%27&STEP_SIZE=%275+m%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "10c8511a90d3976e7457472af095c51507445066f4af288831d2fb18cf8350c0",
+    "bytes": 15541,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T17:49:51+0530"
+  },
+  "data/comets/dense/IkeyaSeki-1965.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F1965+S1-A%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%27JD2439053.666667%27&STOP_TIME=%27JD2439055.666667%27&STEP_SIZE=%275+m%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "540e0149eab865715d16b593e52a6c97877d61ffecee623141a0901c3a12cfd4",
+    "bytes": 15565,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T17:49:54+0530"
+  },
+  "data/comets/dense/Lovejoy-2011.npz": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27DES%3DC%2F2011+W3%3B%27&EPHEM_TYPE=VECTORS&CENTER=%400&START_TIME=%27JD2455910.500000%27&STOP_TIME=%27JD2455912.500000%27&STEP_SIZE=%275+m%27&REF_PLANE=FRAME&OUT_UNITS=KM-S&CSV_FORMAT=YES&VEC_TABLE=2",
+    "sha256": "483a8c7ade8e86a9ecbff96466c43265b9fb63ce540e37bfdb3eb05f6cbc985e",
+    "bytes": 15522,
+    "license": "NASA/JPL Horizons; retain orbit solution metadata",
+    "installed": "2026-10-21T17:49:59+0530"
+  },
+  "data/references/crosscheck/mag-199.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "f045f77567cbd2a9b4951664dad0d39061d24cfb741b715926aff5d14a2fd6aa",
+    "bytes": 35434,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-299.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "09bcbb58247429798c17b7f7e1f7f6d2a751b473b200fa20da1704cef230c4e7",
+    "bytes": 35434,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-499.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "8cbf115898b5afff06649bf564559a3fa065ddae2fc12b5436005ba4ce66294c",
+    "bytes": 35435,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-599.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "75f26cb949f58df77830ae5a9e1e58a3ee5c7142a34e8337cfeaf6ed1b0e6263",
+    "bytes": 35450,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-699.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "01fe9876d3470b1e49be9f927eef3e507fa83fd3dfb8d7a9ea1e6542a39f167b",
+    "bytes": 35490,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-799.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "3b6bdb8bc4778571266db48d9688f4a4cfb93262076a0bed4caabda82a91a643",
+    "bytes": 35442,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-899.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "4f49edf02acf43d2ab548def0cf0bd3bba563fec8be8013b8a5d7f031c77589b",
+    "bytes": 35458,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  },
+  "data/references/crosscheck/mag-301.json": {
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api (or eclipse.gsfc.nasa.gov)",
+    "sha256": "aa697dfb9b644f38b0130a39805f6c4a9a7fc7c10e1f1568a37d5744bda65391",
+    "bytes": 35254,
+    "license": "NASA/JPL Horizons or NASA GSFC Eclipse Web Site (Espenak & Meeus); cross-check reference",
+    "installed": "2026-10-21T17:59:58+0530"
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "cutoff": 4.5,
+    "seconds": 0.8978562920001423,
+    "bytes": 855125,
+    "stars": 918,
+    "work": {
+      "screened": 119625,
+      "propagated": 1626,
+      "prepared": 918,
+      "skipped_detailed": 117999,
+      "max_magnitude": 4.5,
+      "priority": "brightest apparent magnitude first"
+    },
+    "timings": {
+      "time_and_frame_ms": 413.14737500033516,
+      "solar_system_ms": 13.017334000323899,
+      "stellar_ms": 21.476666999660665,
+      "comets_ms": 392.64683299916214,
+      "total_ms": 840.2919589989324
+    }
+  },
+  {
+    "cutoff": 6.5,
+    "seconds": 0.5978368750002119,
+    "bytes": 6894195,
+    "stars": 8864,
+    "work": {
+      "screened": 119625,
+      "propagated": 15493,
+      "prepared": 8864,
+      "skipped_detailed": 104132,
+      "max_magnitude": 6.5,
+      "priority": "brightest apparent magnitude first"
+    },
+    "timings": {
+      "time_and_frame_ms": 1.118250000217813,
+      "solar_system_ms": 6.530750000820262,
+      "stellar_ms": 160.81737499916926,
+      "comets_ms": 2.13370900019072,
+      "total_ms": 170.6025840012444
+    }
+  }
+]

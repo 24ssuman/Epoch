@@ -1,0 +1,167 @@
+{
+  "source": "Saved JPL Horizons topocentric airless TT reference cases; IAU76/80 vs IAU06 frame bias included",
+  "cases": [
+    {
+      "name": "Sun",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.24361035453853577,
+      "altitude_residual_arcsec": 0.10831328648706062
+    },
+    {
+      "name": "Moon",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.25380760329976443,
+      "altitude_residual_arcsec": 0.1322703574956563
+    },
+    {
+      "name": "Mercury",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.22643675265729227,
+      "altitude_residual_arcsec": -2.5738793947382987
+    },
+    {
+      "name": "Venus",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.25491484469595344,
+      "altitude_residual_arcsec": 3.40024321356438
+    },
+    {
+      "name": "Mars",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.2953305764873543,
+      "altitude_residual_arcsec": 0.5723935614000197
+    },
+    {
+      "name": "Jupiter",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.2416731136458893,
+      "altitude_residual_arcsec": -4.5718918899666505
+    },
+    {
+      "name": "Saturn",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.24067509230514753,
+      "altitude_residual_arcsec": -1.5683152778812826
+    },
+    {
+      "name": "Uranus",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.24253056029601586,
+      "altitude_residual_arcsec": -3.6357424714317688
+    },
+    {
+      "name": "Neptune",
+      "jd_tt": 2415021.0,
+      "separation_arcsec": 0.24403911710066767,
+      "altitude_residual_arcsec": 1.8957890007079925
+    },
+    {
+      "name": "Sun",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.048340426168966444,
+      "altitude_residual_arcsec": -0.0434068183700731
+    },
+    {
+      "name": "Moon",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.044044260202261154,
+      "altitude_residual_arcsec": -0.026501092405339932
+    },
+    {
+      "name": "Mercury",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.011254054018355752,
+      "altitude_residual_arcsec": -0.05163431219870063
+    },
+    {
+      "name": "Venus",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.04198847181145931,
+      "altitude_residual_arcsec": -0.036374826709106856
+    },
+    {
+      "name": "Mars",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.05534024710041326,
+      "altitude_residual_arcsec": -0.027360267485221357
+    },
+    {
+      "name": "Jupiter",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.0525227847542289,
+      "altitude_residual_arcsec": 0.013486393996764434
+    },
+    {
+      "name": "Saturn",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.0515158521972353,
+      "altitude_residual_arcsec": 0.023356699946930348
+    },
+    {
+      "name": "Uranus",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.050876950693228194,
+      "altitude_residual_arcsec": -0.03388571724016742
+    },
+    {
+      "name": "Neptune",
+      "jd_tt": 2451545.0,
+      "separation_arcsec": 0.05026349270011938,
+      "altitude_residual_arcsec": -0.03875405272850685
+    },
+    {
+      "name": "Sun",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.05041712751896205,
+      "altitude_residual_arcsec": -0.1546549576914913
+    },
+    {
+      "name": "Moon",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.05113160545638804,
+      "altitude_residual_arcsec": 0.0632963091860006
+    },
+    {
+      "name": "Mercury",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.06503361613051965,
+      "altitude_residual_arcsec": -0.15334229219519102
+    },
+    {
+      "name": "Venus",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.0815004863587648,
+      "altitude_residual_arcsec": -0.2106195805154698
+    },
+    {
+      "name": "Mars",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.04599059814246221,
+      "altitude_residual_arcsec": -0.018496511675891725
+    },
+    {
+      "name": "Jupiter",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.04844673703590672,
+      "altitude_residual_arcsec": -0.04512373508447354
+    },
+    {
+      "name": "Saturn",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.05133257906509372,
+      "altitude_residual_arcsec": 0.14693612798168942
+    },
+    {
+      "name": "Uranus",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.04771997779082588,
+      "altitude_residual_arcsec": 0.12311690134580999
+    },
+    {
+      "name": "Neptune",
+      "jd_tt": 2461335.0,
+      "separation_arcsec": 0.051299116892377164,
+      "altitude_residual_arcsec": 0.13701595424322477
+    }
+  ]
+}
