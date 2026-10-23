@@ -26,3 +26,7 @@ Outside ephemeris coverage, planets appear only after the background generator p
 Colors use measured color indices and a blackbody approximation; calibrated per-star spectra are not bundled. Atmosphere is a numerical single-scattering standard-air Rayleigh/Mie model, not a weather reconstruction. Multiple scattering and ozone absorption are omitted. Planetary photometry, Saturn rings, star variability, ancient geography and comet brightness/tails have explicit approximation limits. These are not event-grade eclipse or ancient-alignment predictions.
 
 Read [scientific methods](SCIENCE.md), [validation](VALIDATION.md) and [data provenance](../data/README.md).
+
+## Installation verification
+
+See the [clean installation report](INSTALLATION.md) for the isolated setup procedure, checked data hashes, offline verification and scientific-equivalence results.

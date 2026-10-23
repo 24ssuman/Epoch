@@ -1,5 +1,13 @@
 # Offline setup and preprocessing tools
 
+## Complete installation
+
+Use the root setup command for a fresh clone. `setup_local.py` creates the local environment, installs locked dependencies, calls `install_runtime_data.py`, and builds the interface. `--check` adds both test suites and `verify_install.py`, which blocks socket connections while exercising modern/ancient snapshots, object details, comet packs and reconstruction initialization. No existing playback frames are supplied.
+
+`install_runtime_data.py` verifies/unpacks the committed prepared-data bundle and downloads/checksums the official JPL kernels. The scripts below are individual research/acquisition tools; they are not additional steps required by the complete setup. `package_runtime_data.py` is a maintainer exporter that preserves existing archives. See the [prepared-data guide](../data/prepared/README.md).
+
+## Individual acquisition and research tools
+
 Online-only, explicitly invoked acquisition: setup_data.py (kernels/HYG or optional --gaia), install_assets.py, install_perturbers.py, install_comets.py, install_diameters.py and fetch_references.py. Sources/checksums are retained. Kernel downloads use resumable bounded ranges; optional Gaia uses a retained UWS job.
 
 Offline: build_stellar_pack.py prepares bright-star Galactic trajectories; reconstruct.py runs a checkpointed reduced-model planetary worker. The website launches reconstruction as a standalone process so it can survive server restarts. These scripts preserve inputs/checkpoints and append reasoning/results to the root LOG.md.

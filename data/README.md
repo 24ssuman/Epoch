@@ -1,5 +1,7 @@
 # Offline scientific data
 
+A fresh clone uses the committed [prepared runtime bundle](prepared/README.md) plus official JPL kernel downloads performed by setup. No playback frames are distributed; the runtime creates its own cache. Original HYG/JMDC downloads and long-running scientific generation are unnecessary for normal installation.
+
 `manifest.json` records installed-source URLs, local SHA-256 checksums, byte sizes, licenses/attribution and installation times. Complete kernel files are retained. Their temporary ranged-download shards under `tmp/downloads/` may be removed after assembly and checksum verification.
 
 - kernels/: JPL DE440/DE441, GM constants and 16 asteroid J2000 states/source responses.

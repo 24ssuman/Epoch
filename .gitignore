@@ -17,4 +17,5 @@ LOG.md
 CLAUDE.md
 .claude/
 data/playback/frames.sqlite3
+data/playback/frames.sqlite3-*
 frontend/tsconfig.tsbuildinfo

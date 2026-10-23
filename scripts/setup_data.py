@@ -52,7 +52,7 @@ def download_kernel(url,path,license):
         r=c.head(url,headers={'Accept-Encoding':'identity'});r.raise_for_status();total=int(r.headers['content-length'])
     chunksize=1024*1024;directory=TMP/'downloads'/(path.name+'-1m');directory.mkdir(parents=True,exist_ok=True)
     pieces=[(i,start,min(total-1,start+chunksize-1)) for i,start in enumerate(range(0,total,chunksize))]
-    needed=sum(end-start+1 for i,start,end in pieces if not (directory/str(i)).exists())+total
+    needed=sum(end-start+1 for i,start,end in pieces if not (directory/str(i)).exists() or (directory/str(i)).stat().st_size!=end-start+1)+total
     guard(needed)
     def piece(spec):
         i,start,end=spec;p=directory/str(i)
@@ -62,14 +62,17 @@ def download_kernel(url,path,license):
                 with httpx.Client(follow_redirects=True,timeout=180) as c:
                     r=c.get(url,headers={'Range':f'bytes={start}-{end}','Accept-Encoding':'identity'})
                     r.raise_for_status()
-                    if r.status_code!=206 or len(r.content)!=end-start+1:raise RuntimeError('Server did not honor bounded byte range')
+                    if r.status_code!=206 or len(r.content)!=end-start+1 or r.headers.get('content-range')!=f'bytes {start}-{end}/{total}':raise RuntimeError('Server did not honor bounded byte range')
                     p.write_bytes(r.content)
                 return p
-            except Exception:
+            except Exception as error:
+                print(f'{path.name} range {i}: attempt {attempt+1} failed ({error}); retaining completed ranges',flush=True)
                 if attempt==3:raise
                 time.sleep(2+attempt*2)
     log(f'Downloading {path.name} using resumable bounded ranges ({total:,} bytes)')
-    with ThreadPoolExecutor(max_workers=16) as pool: list(pool.map(piece,pieces))
+    with ThreadPoolExecutor(max_workers=16) as pool:
+        for completed,_ in enumerate(pool.map(piece,pieces),1):
+            if completed%20==0 or completed==len(pieces):print(f'{path.name}: {completed}/{len(pieces)} ranges complete',flush=True)
     part=path.with_suffix(path.suffix+'.partial')
     with part.open('wb') as f:
         for i,start,end in pieces:

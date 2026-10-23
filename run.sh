@@ -1,6 +1,6 @@
-#!/bin/zsh
-set -eu
-cd "${0:A:h}"
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")"
 export XDG_CACHE_HOME="$PWD/tmp/cache"
 export XDG_CONFIG_HOME="$PWD/tmp/config"
 export MPLCONFIGDIR="$PWD/tmp/matplotlib"

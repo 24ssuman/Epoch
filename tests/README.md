@@ -21,3 +21,5 @@ python -m pytest -q
 npm test --prefix frontend
 npm run build --prefix frontend
 ```
+
+`test_installation.py` checks prepared-data integrity, rejection of unsafe archive members, repeat installation, backups of modified inputs, preservation of an existing playback cache, and exclusion of playback/obsolete generations from the distributed manifest. Run the complete installation checks with the root setup command and `--check`; the separate verification script blocks socket connections while exercising the installed app.

@@ -10,46 +10,39 @@ A local astronomical observatory that shows the sky from any place on Earth betw
 | [Node.js](https://nodejs.org/) (includes npm) | 20 or newer | building the web interface |
 | [Git](https://git-scm.com/downloads) | any recent | getting the code |
 
-- **Python packages** (from `backend/requirements.txt`): fastapi, uvicorn, numpy, scipy, astropy, pyerfa, jplephem, rebound, reboundx, galpy, httpx, pytest.
+- **Python packages** (installed from `backend/requirements-lock.txt`; direct requirements in `backend/requirements.txt`): fastapi, uvicorn, numpy, scipy, astropy, pyerfa, jplephem, rebound, reboundx, galpy, httpx, pytest.
 - **JavaScript packages** (from `frontend/package.json`): react, react-dom, three, lucide-react; for the build, typescript and vite.
-- **Disk and network:** about 10 GB of free space. Setup downloads several GB once; after that no internet is needed.
+- A C compiler/build toolchain may be needed for scientific packages such as REBOUNDx when no wheel is available (Xcode Command Line Tools on macOS, corresponding C build tools on Linux/Windows).
+- **Disk and network:** about 10 GB of free space for installation, including retained resumable download shards and dependencies. Setup downloads **3.43 GB of JPL kernels** plus Python/JavaScript packages. The repository includes a compact prepared scientific-data bundle; saved playback frames are excluded. Runtime needs no internet.
 
 ## Setup (once, online)
-
-Run these commands in a terminal from the project folder. If `python` is not found, use `python3` or `py`.
 
 ```bash
 git clone https://github.com/24ssuman/Epoch.git
 cd Epoch
-python -m venv .venv
+./setup.sh --check
 ```
 
-Activate the virtual environment. Do this in every new terminal before running the commands below:
+On Windows, or to choose a particular Python interpreter, use `python scripts/setup_local.py --check` (`python3` or `py -3.12` may be appropriate). Activation of a virtual environment is unnecessary: setup creates and uses the checkout's own `.venv`. Node.js/npm must already be installed. The shell shortcuts support macOS/Linux; use the Python commands on Windows.
 
-- macOS / Linux: `source .venv/bin/activate`
-- Windows: `.venv\Scripts\activate`
+Setup installs locked Python and JavaScript dependencies, verifies/unpacks the prepared runtime data, downloads the official DE440/DE441 kernels with resumable ranges, checks their pinned SHA-256 hashes, builds the interface, and runs backend/frontend tests plus offline installation checks. All environments, downloads and caches stay inside the checkout. Plain `./setup.sh` performs installation/build without the optional checks.
 
-Install the packages and the offline data, then build the interface:
+The prepared bundle includes star catalogs and stellar trajectories, measured diameters, Sanskrit labels, comet windows and brightness calibration, JPL constants/asteroid states, and current deep-time planetary results with seed/calibration parameters. It avoids repeating the long scientific calculations during installation. Sources, licenses, units, frames and limitations are documented in the [prepared-data guide](data/prepared/README.md).
 
-```bash
-python -m pip install -r backend/requirements.txt
-npm install --prefix frontend
-python scripts/setup_data.py --extended
-python scripts/install_assets.py
-python scripts/install_perturbers.py
-python scripts/install_comets.py
-python scripts/install_diameters.py
-python scripts/build_stellar_pack.py
-python scripts/fetch_references.py
-npm run build --prefix frontend
-```
+An interrupted setup can be rerun with the same command. Completed matching files and bounded kernel ranges are reused. Modified prepared inputs are preserved in local setup backups before replacement; a mismatched existing kernel is preserved and setup stops with instructions. Setup never distributes, clears or needs an existing playback database. New exact frames are cached locally as you use the app.
 
 ## Run
 
-With the virtual environment active:
+macOS / Linux:
 
 ```bash
-python -m uvicorn backend.app:app --host 127.0.0.1 --port 8765
+./run.sh
+```
+
+Windows:
+
+```powershell
+.venv\Scripts\python.exe -m uvicorn backend.app:app --host 127.0.0.1 --port 8765
 ```
 
 Open **http://127.0.0.1:8765/** in a browser. Stop the server with Ctrl+C.
@@ -58,12 +51,14 @@ Open **http://127.0.0.1:8765/** in a browser. Stop the server with Ctrl+C.
 
 - Drag to look around and use the mouse wheel to zoom. Pick a location or enter coordinates, and set the date in the date dialog or on the timeline. Dates are in **TT** (Terrestrial Time); BCE/CE and Julian/Gregorian calendars are supported.
 - Search stars, planets and comets by name or HIP number, and click one to inspect it. Settings let you switch atmosphere, names (including Sanskrit names), grids and constellation lines.
-- Planets before about 13,200 BCE come from a background calculation: start it from **Offline data → Generate past / Generate future** in the app.
+- Planets before about 13,200 BCE use the bundled reduced-model results. Their reports describe numerical checks and physical limits; these are extrapolations. Background reconstruction controls remain available for research work.
 
 ## Check that it works
 
+The [clean installation report](docs/INSTALLATION.md) records the verified environment, downloaded-data hashes and offline checks.
+
 ```bash
-python -m pytest -q
+./setup.sh --check
 ```
 
 ## Limitations
